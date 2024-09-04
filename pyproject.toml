@@ -2,7 +2,7 @@
 name = "goose-talk-to-me"
 version = "0.1.0"
 description = "A voice interaction plugin for your goose"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 authors = [{name = "Max Novich", email ="mnovich@squareup.com"}]
 readme = "README.md"
 dependencies = [
