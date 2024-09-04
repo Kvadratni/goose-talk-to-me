@@ -1,0 +1,29 @@
+[project]
+name = "goose-talk-to-me"
+version = "0.1.0"
+description = "A voice interaction plugin for your goose"
+requires-python = ">=3.12"
+authors = [{name = "Max Novich", email ="mnovich@squareup.com"}]
+readme = "README.md"
+dependencies = [
+    "goose-ai==0.8.6",
+    "openai-whisper @ git+https://github.com/Kvadratni/block-whisper.git@main",
+    "sounddevice==0.4.4",
+    "soundfile==0.12.1",
+    "numpy==2.0.1",
+    "scipy==1.14.1",
+    "torch==2.4.0",
+    "numba==0.60.0",
+    "more-itertools==10.4.0",
+    "ffmpeg==1.4",
+    "pyttsx3>=2.91",
+]
+
+[project.entry-points."goose.toolkit"]
+demo = "goose.toolkit.talk_to_me:TalkToMeGoose"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.2",
+    "codecov>=2.1.13",
+]
