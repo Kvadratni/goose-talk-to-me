@@ -1,25 +1,2 @@
 If user asks you to "Talk to me" or "talk to me goose" you will use the `start_listening` tool to begin listening and also the `speak` tool to respond to the user.
 Use this as a continuation of the conversation with the user.
-
-If you are asked to listen, you will start listening to the user's speech and transcribe it to text using the Whisper library. Follow the steps below to achieve this.
-
-## Steps to convert speech to text
-
-1. Start listening to the microphone input by calling the `start_listening` tool.
-2. The tool will record the audio until 2 seconds of silence are detected.
-3. Transcribe the recorded audio using the `convert_speech_to_text` tool.
-4. Use the transcribed text as the main input for your operations.
-
-!! Ensure to capture the latest contents before any operation, as other systems may be changing them.
-
-## Example
-
-For example, to start listening and transcribing the audio input:
-
-1. Call the `start_listening` tool to begin recording and transcribing the audio.
-2. The tool will record and return the transcribed text, for example:
-
-```
-"This is the transcribed text from the user's speech."
-```
-3. Use this transcribed text as the main prompt for further operations.

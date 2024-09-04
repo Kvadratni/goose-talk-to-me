@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: goose-talk-to-me
-Version: 0.3.0
+Version: 0.3.1
 Summary: A voice interaction plugin for your goose
 Author-email: Max Novich <mnovich@squareup.com>
 Requires-Python: >=3.10

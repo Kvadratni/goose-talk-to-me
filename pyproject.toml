@@ -1,6 +1,6 @@
 [project]
 name = "goose-talk-to-me"
-version = "0.3.0"
+version = "0.3.1"
 description = "A voice interaction plugin for your goose"
 requires-python = ">=3.10"
 authors = [{name = "Max Novich", email ="mnovich@squareup.com"}]
