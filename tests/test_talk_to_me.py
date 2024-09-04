@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import patch, MagicMock
 import unittest
-from talk_to_me import TalkToMeGoose
+from goose_talk_to_me.talk_to_me import TalkToMeGoose
 
 
 @pytest.fixture
