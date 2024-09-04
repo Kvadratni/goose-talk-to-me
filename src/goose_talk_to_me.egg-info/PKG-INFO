@@ -3,8 +3,9 @@ Name: goose-talk-to-me
 Version: 0.1.0
 Summary: A voice interaction plugin for your goose
 Author-email: Max Novich <mnovich@squareup.com>
-Requires-Python: >=3.12
+Requires-Python: >=3.10
 Description-Content-Type: text/markdown
+License-File: LICENSE
 Requires-Dist: goose-ai==0.8.6
 Requires-Dist: openai-whisper@ git+https://github.com/Kvadratni/block-whisper.git@main
 Requires-Dist: sounddevice==0.4.4
@@ -19,7 +20,7 @@ Requires-Dist: pyttsx3>=2.91
 
 # Goose-Talk-To-Me
 
-A voice interaction plugin for your goose. This project leverages a local copy of Whisper for voice interaction and transcription.
+A voice interaction plugin for your [goose](https://github.com/square/goose/tree/main). This project leverages a local copy of Whisper for voice interaction and transcription.
 
 ## Project Description
 
@@ -52,7 +53,9 @@ Install the dependencies and prepare your environment:
 ```bash
 brew install ffmpeg
 brew install portaudio
-pipx install goosw & install goose-talk-to-me
+brew install espeak
+brew install libespeak1
+pipx install goose & install goose-talk-to-me
 ```
 
 ## Usage

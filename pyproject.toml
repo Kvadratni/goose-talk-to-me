@@ -20,7 +20,7 @@ dependencies = [
 ]
 
 [project.entry-points."goose.toolkit"]
-demo = "goose.toolkit.talk_to_me:TalkToMeGoose"
+talk_to_me = "goose.toolkit.talk_to_me:TalkToMeGoose"
 
 [tool.uv]
 dev-dependencies = [
