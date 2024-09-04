@@ -4,7 +4,7 @@ from exchange import Message
 from whisper import load_model
 from soundfile import write
 import numpy as np
-import pyttsx3
+import pyttsx4
 
 
 class TalkToMeGoose(Toolkit):
@@ -86,7 +86,7 @@ class TalkToMeGoose(Toolkit):
             text (str): The text to be spoken aloud
         """
         if self.tts_engine is None:
-            self.tts_engine = pyttsx3.init()
+            self.tts_engine = pyttsx4.init(driverName='nsss')
         self.tts_engine.say(text)
         self.tts_engine.runAndWait()
 

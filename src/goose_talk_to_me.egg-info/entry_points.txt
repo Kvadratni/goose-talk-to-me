@@ -1,2 +1,2 @@
 [goose.toolkit]
-talk_to_me = goose_talk_to_me.talk_to_me:TalkToMeGoose
+talk-to-me = goose_talk_to_me.talk_to_me:TalkToMeGoose

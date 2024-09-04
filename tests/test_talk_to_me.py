@@ -33,13 +33,13 @@ def test_convert_speech_to_text(mock_print: any, talk_to_me_toolkit: TalkToMeGoo
 
 
 @patch("pyttsx3.init")
-def test_speak(mock_pyttsx3_init: any, talk_to_me_toolkit: TalkToMeGoose) -> None:
+def test_speak(mock_pyttsx4_init: any, talk_to_me_toolkit: TalkToMeGoose) -> None:
     engine_mock = MagicMock()
-    mock_pyttsx3_init.return_value = engine_mock
+    mock_pyttsx4_init.return_value = engine_mock
 
     text = "Hello, world!"
     talk_to_me_toolkit.speak(text)
 
-    mock_pyttsx3_init.assert_called_once_with()
+    mock_pyttsx4_init.assert_called_once_with()
     engine_mock.say.assert_called_once_with(text)
     engine_mock.runAndWait.assert_called_once_with()

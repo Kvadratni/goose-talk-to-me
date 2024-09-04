@@ -30,11 +30,15 @@ Goose-Talk-To-Me is a project dedicated to enabling voice interactions using sta
 
 Install the dependencies and prepare your environment:
 
+### Linux
+```bash
+sudo apt update && sudo apt install espeak ffmpeg libespeak1 portaudio19-dev
+pipx install goose & install goose-talk-to-me
+```
+### MacOS
 ```bash
 brew install ffmpeg
 brew install portaudio
-brew install espeak
-brew install libespeak1
 pipx install goose & install goose-talk-to-me
 ```
 
