@@ -1,6 +1,8 @@
+LICENSE
 README.md
 pyproject.toml
-src/talk_to_me.py
+src/goose_talk_to_me/__init__.py
+src/goose_talk_to_me/talk_to_me.py
 src/goose_talk_to_me.egg-info/PKG-INFO
 src/goose_talk_to_me.egg-info/SOURCES.txt
 src/goose_talk_to_me.egg-info/dependency_links.txt

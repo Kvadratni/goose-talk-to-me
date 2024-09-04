@@ -1,8 +1,8 @@
 [project]
 name = "goose-talk-to-me"
-version = "0.1.0"
+version = "0.3.0"
 description = "A voice interaction plugin for your goose"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 authors = [{name = "Max Novich", email ="mnovich@squareup.com"}]
 readme = "README.md"
 dependencies = [
@@ -16,11 +16,12 @@ dependencies = [
     "numba==0.60.0",
     "more-itertools==10.4.0",
     "ffmpeg==1.4",
-    "pyttsx3>=2.91",
+    "pyobjc>=10.3.1",
+    "pyttsx4 @ git+https://github.com/jannnnnnnnnn/pyttsx4.git@macos-fix",
 ]
 
 [project.entry-points."goose.toolkit"]
-demo = "goose.toolkit.talk_to_me:TalkToMeGoose"
+talk-to-me = "goose_talk_to_me.talk_to_me:TalkToMeGoose"
 
 [tool.uv]
 dev-dependencies = [
