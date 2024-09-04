@@ -33,7 +33,9 @@ Install the dependencies and prepare your environment:
 ```bash
 brew install ffmpeg
 brew install portaudio
-pipx install goosw & install goose-talk-to-me
+brew install espeak
+brew install libespeak1
+pipx install goose & install goose-talk-to-me
 ```
 
 ## Usage
