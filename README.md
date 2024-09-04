@@ -1,6 +1,6 @@
 # Goose-Talk-To-Me
 
-A voice interaction plugin for your goose. This project leverages a local copy of Whisper for voice interaction and transcription.
+A voice interaction plugin for your [goose](https://github.com/square/goose/tree/main). This project leverages a local copy of Whisper for voice interaction and transcription.
 
 ## Project Description
 
