@@ -45,7 +45,7 @@ pipx install goose & install goose-talk-to-me
 ```bash
 brew install ffmpeg
 brew install portaudio
-pipx install goose & install goose-talk-to-me  --include-deps
+pipx install goose-ai --preinstall goose-talk-to-me
 ```
 
 ## Usage
