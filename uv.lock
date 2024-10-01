@@ -3,18 +3,19 @@ requires-python = ">=3.10"
 
 [[package]]
 name = "ai-exchange"
-version = "0.8.4"
+version = "0.9.3"
 source = { registry = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "griffe" },
     { name = "httpx" },
     { name = "jinja2" },
+    { name = "tenacity" },
     { name = "tiktoken" },
 ]
-sdist = { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/16/b5/110d4032052f617d51d5ed0660a4af5b5910d353fee6efca7ef65208ab96/ai_exchange-0.8.4.tar.gz", hash = "sha256:ab84fa317570926ec767594bd03edb15e6910c3c840c9557a1262f826d217a36" }
+sdist = { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/61/87/14ad0b044474b9175e24ee04313e8e1650ee9b42740649b3aaced692673f/ai_exchange-0.9.3.tar.gz", hash = "sha256:400981fcee7230c907e7a8e3763e0adb9a4925416803114aa40ae4352ede8049" }
 wheels = [
-    { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/ef/e2/5a255050ad7afdd48093d538c85ec443cadeb38da53ee100448bc9525c40/ai_exchange-0.8.4-py3-none-any.whl", hash = "sha256:795bb276936f4366b9fd0878c08c2ed004a2fbe6f3c78fcaaa01952e70e1c39a" },
+    { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/34/e9/591affc62a57da726704d0b827d37192678e410c558a49dd6d31e285a04d/ai_exchange-0.9.3-py3-none-any.whl", hash = "sha256:752541e9073cca60edb3a8747d36e1821ca04020b30d4522ebac649338dbe335" },
 ]
 
 [[package]]
@@ -298,7 +299,7 @@ wheels = [
 
 [[package]]
 name = "goose-ai"
-version = "0.8.6"
+version = "0.9.0"
 source = { registry = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/simple" }
 dependencies = [
     { name = "ai-exchange" },
@@ -308,14 +309,14 @@ dependencies = [
     { name = "rich" },
     { name = "ruamel-yaml" },
 ]
-sdist = { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/82/3c/d11437e42301b9743ac5347f2fd5d82ef03a86b197e7866ecdd69d946d98/goose_ai-0.8.6.tar.gz", hash = "sha256:333b8ed79eb95d6427f5e27c735178d8fa2f0ce2f198e8c99c5ea180081d35d2" }
+sdist = { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/83/2a/fa649442896b712a12bedb39f6e717a5cdd3ab8741289a6ea75f86ac3418/goose_ai-0.9.0.tar.gz", hash = "sha256:412eee6535a894ef5f2048649388100ff9b9112f75ca05ea016233ef94e49925" }
 wheels = [
-    { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/16/f6/d317f780892148d7d5158075f9ac5c2c59566e9d73db92018766578383f1/goose_ai-0.8.6-py3-none-any.whl", hash = "sha256:440f9823cd87948f74ae75645b2fc4476890df6099c8a12524b08203b4080daa" },
+    { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/cb/d1/45afbcb21a61e23cbdd2b8eee512930e61b81273ae050151d05ac5dfc0b4/goose_ai-0.9.0-py3-none-any.whl", hash = "sha256:e34141cbb920119f8a5b05e8459de0e043bf39a2c3f4009316600722ce826d96" },
 ]
 
 [[package]]
 name = "goose-talk-to-me"
-version = "0.3.1"
+version = "0.3.2"
 source = { editable = "." }
 dependencies = [
     { name = "ffmpeg" },
@@ -341,7 +342,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "ffmpeg", specifier = "==1.4" },
-    { name = "goose-ai", specifier = "==0.8.6" },
+    { name = "goose-ai", specifier = "==0.9.0" },
     { name = "more-itertools", specifier = "==10.4.0" },
     { name = "numba", specifier = "==0.60.0" },
     { name = "numpy", specifier = "==2.0.1" },
@@ -3546,6 +3547,15 @@ dependencies = [
 sdist = { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/94/15/4a041424c7187f41cce678f5a02189b244e9aac61a18b45cd415a3a470f3/sympy-1.13.2.tar.gz", hash = "sha256:401449d84d07be9d0c7a46a64bd54fe097667d5e7181bfe67ec777be9e01cb13" }
 wheels = [
     { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/c1/f9/6845bf8fca0eaf847da21c5d5bc6cd92797364662824a11d3f836423a1a5/sympy-1.13.2-py3-none-any.whl", hash = "sha256:c51d75517712f1aed280d4ce58506a4a88d635d6b5dd48b39102a7ae1f3fcfe9" },
+]
+
+[[package]]
+name = "tenacity"
+version = "9.0.0"
+source = { registry = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/simple" }
+sdist = { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/cd/94/91fccdb4b8110642462e653d5dcb27e7b674742ad68efd146367da7bdb10/tenacity-9.0.0.tar.gz", hash = "sha256:807f37ca97d62aa361264d497b0e31e92b8027044942bfa756160d908320d73b" }
+wheels = [
+    { url = "https://artifactory.global.square/artifactory/api/pypi/block-pypi/packages/packages/b6/cb/b86984bed139586d01532a587464b5805f12e397594f19f931c4c2fbfa61/tenacity-9.0.0-py3-none-any.whl", hash = "sha256:93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539" },
 ]
 
 [[package]]
