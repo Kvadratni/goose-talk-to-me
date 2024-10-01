@@ -1,5 +1,5 @@
 goose-ai==0.8.6
-openai-whisper@ git+https://github.com/Kvadratni/block-whisper.git@main
+openai-whisper==v20240930
 sounddevice==0.4.4
 soundfile==0.12.1
 numpy==2.0.1
@@ -9,4 +9,4 @@ numba==0.60.0
 more-itertools==10.4.0
 ffmpeg==1.4
 pyobjc>=10.3.1
-pyttsx4@ git+https://github.com/jannnnnnnnnn/pyttsx4.git@macos-fix
+pyttsx3==2.98
